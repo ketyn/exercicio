@@ -1,0 +1,54 @@
+@import 'partials/reset.css';
+@import 'partials/variables.css';
+@import 'partials/font.css';
+
+section {
+    display: flex;
+    background-color: var(--advice-card-color);
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+
+p {
+    color: var(--advice-dice-color);
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+button {
+    background-color: var(--advice-dice-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    translate: -30px;
+}
+
+button:hover{
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@media (max-width: 576px) {
+    section{
+        width: 400px;
+        height: 300px;
+    }
+    .line img{
+        max-width: 100%;
+    }
+}
